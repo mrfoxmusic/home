@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>MrFox Music - Home</title>
+</head>
+<body id="body">
+    <div id="loading-animation" class="animation-container">
+        <div class="animation">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="main-content" style="display:none;">
+        <div class="l-navbar" id="navbar">
+            <nav class="nav">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <img src="assets/icons/nam.svg" alt="" class="nav__logo-icon">
+                        <span class="nav__logo-text">MrFox Music</span>
+                    </a>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <ul class="nav__list">
+                        <a href="#" class="nav__link active">
+                            <i class='bx bx-grid-alt nav__icon'></i>
+                            <span class="nav__text">Home</span>
+                        </a>
+                        <a href="https://mrfoxmusic.github.io/about" class="nav__link">
+                            <i class='bx bx-info-circle nav__icon'></i>
+                            <span class="nav__text">About</span>
+                        </a>
+                        <a href="https://mrfoxmusic.github.io/follow" class="nav__link">
+                            <i class='bx bx-bell nav__icon' ></i>
+                            <span class="nav__text">Follow</span>
+                        </a>
+                        <a href="https://mrfoxmusic.github.io/contact" class="nav__link">
+                            <i class='bx bx-message-square-detail nav__icon'></i>
+                            <span class="nav__text">Contact</span>
+                        </a>         
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search Tracks & Artists">
+            <select id="search-genres">
+                <option value="">Search Genres</option>
+                <option value="Techno">Future Bass</option>
+                <option value="Dark">R&B</option>
+                <option value="EDM">EDM</option>
+                <option value="EDM">Pop</option>
+                <option value="EDM">Dance</option>
+            </select>
+            <select id="search-moods">
+                <option value="">Search Moods</option>
+                <option value="Chill">Chill</option>
+            </select>
+        </div>
+        <div class="music-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>MrFox Genre</th>
+                        <th>Title</th>
+                        <th>Artist</th>
+                        <th>Genres & Moods</th>
+                        <th>Download</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-audio="assets/songs/Beautiful Love.mp3">
+                        <td><img src="assets/images/beautifullove.jpg" alt="Cover"></td>
+                        <td>Beautiful Love</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">EDM</span>
+                            <span class="tag">R&B</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Beautiful Love.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Dream Love.mp3">
+                        <td><img src="assets/images/dreamlove.jpg" alt="Cover"></td>
+                        <td>Dream Love</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">EDM</span>
+                            <span class="tag">R&B</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Dream Love.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Good Night.mp3">
+                        <td><img src="assets/images/goodnight.jpg" alt="Cover"></td>
+                        <td>Good Night</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">EDM</span>
+                            <span class="tag">Chill</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Good Night.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Hero Dream.mp3">
+                        <td><img src="assets/images/herodream.jpg" alt="Cover"></td>
+                        <td>Hero Dream</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">EDM</span>
+                            <span class="tag">R&B</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Hero Dream.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Joyful Morning.mp3">
+                        <td><img src="assets/images/joyfulmorning.jpg" alt="Cover"></td>
+                        <td>Joyful Morning</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">R&B</span>
+                            <span class="tag">Future Bass</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Joyful Morning.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Live The Life.mp3">
+                        <td><img src="assets/images/livethelife.jpg" alt="Cover"></td>
+                        <td>Live The Life</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">EDM</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Live The Life.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Lovely Girl.mp3">
+                        <td><img src="assets/images/lovelygirl.jpg" alt="Cover"></td>
+                        <td>Lovely Girl</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">EDM</span>
+                            <span class="tag">Pop</span>
+                            <span class="tag">Dance</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Lovely Girl.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/New Year Cheer.mp3">
+                        <td><img src="assets/images/newyearcher.jpg" alt="Cover"></td>
+                        <td>New Year Cheer</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">R&B</span>
+                            <span class="tag">Future Bass</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/New Year Cheer.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Perfect in Your Way.mp3">
+                        <td><img src="assets/images/perfect.jpg" alt="Cover"></td>
+                        <td>Perfect in Your Way</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">R&B</span>
+                            <span class="tag">Future Bass</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Perfect in Your Way.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Rise Above.mp3">
+                        <td><img src="assets/images/riseabove.jpg" alt="Cover"></td>
+                        <td>Rise Above</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">EDM</span>
+                            <span class="tag">R&B</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Rise Above.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Silent Guardian .mp3">
+                        <td><img src="assets/images/silent.jpg" alt="Cover"></td>
+                        <td>Silent Guardian </td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">EDM</span>
+                            <span class="tag">R&B</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Silent Guardian .mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Sky.mp3">
+                        <td><img src="assets/images/sky.jpg" alt="Cover"></td>
+                        <td>Sky</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">EDM</span>
+                            <span class="tag">R&B</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Sky.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Slipping Away.mp3">
+                        <td><img src="assets/images/slipping.jpg" alt="Cover"></td>
+                        <td>Slipping Away</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">EDM</span>
+                            <span class="tag">R&B</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Slipping Away.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Study Vibes.mp3">
+                        <td><img src="assets/images/studyvibes.jpg" alt="Cover"></td>
+                        <td>Study Vibes</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">Lofi</span>
+                            <span class="tag">Chill</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Study Vibes.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Summer Days.mp3">
+                        <td><img src="assets/images/summerdays.jpg" alt="Cover"></td>
+                        <td>Summer Days</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">R&B</span>
+                            <span class="tag">Future Bass</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Summer Days.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Twinkle, twinkle, little star.mp3">
+                        <td><img src="assets/images/twinkle.jpg" alt="Cover"></td>
+                        <td>Twinkle, twinkle, little star (Remix)</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">EDM</span>
+                            <span class="tag">R&B</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Twinkle, twinkle, little star.mp3">Download</button></td>
+                    </tr>
+                    <tr data-audio="assets/songs/Wonderful Day.mp3">
+                        <td><img src="assets/images/wonderfulday.jpg" alt="Cover"></td>
+                        <td>Wonderful Day</td>
+                        <td>MrFox Music</td>
+                        <td>
+                            <span class="tag">EDM</span>
+                            <span class="tag">R&B</span>
+                        </td>
+                        <td><button class="download-btn" data-audio="assets/songs/Wonderful Day.mp3">Download</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="music-control">
+            <img src="" alt="Cover" class="music-control-cover">
+            <div class="music-control-info">
+                <div class="music-control-title">Title</div>
+                <div class="music-control-artist">Artist</div>
+            </div>
+            <div class="music-control-buttons">
+                <i class="fas fa-random" id="shuffle-button"></i>
+                <i class="fas fa-step-backward" id="prev-button"></i>
+                <i class="fas fa-play" id="play-pause-button"></i>
+                <i class="fas fa-step-forward" id="next-button"></i>
+                <i class="fas fa-redo-alt" id="repeat-button"></i>
+            </div>
+            <div class="music-control-progress">
+                <span id="current-time">00:00</span>
+                <input type="range" id="progress-bar" value="0" max="100">
+                <span id="total-duration">00:00</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="assets/js/main.js"></script>
+</html>
