@@ -495,7 +495,8 @@ td img {
 .download-btn i {
   margin-right: 10px;
 }
+
 #main-content {
-    display: block;
-    padding-bottom: 70px; /* Space for music control */
+  display: block;
+  padding-bottom: 70px; /* Space for music control */
 }
